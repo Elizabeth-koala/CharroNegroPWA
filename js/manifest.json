@@ -1,0 +1,15 @@
+{
+    "lang": "es-mx",
+    "name":"Charro Negro",
+    "short_name": "El Charro Negro",
+    "description":"Aplicación da detalle sobre el desarrollo de un videojuego",
+    "start_url": "/",
+    "background_color": "#34495E",
+    "theme_color": "#34495E",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [{
+        "src": "/assets/manifest_icon.png",
+        "sizes": "512x512"
+    }]
+}

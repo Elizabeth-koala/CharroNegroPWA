@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Charro Negro</title>
+    <link rel="manifest" href="/js/manifest.json">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/faviconVG.jpg" type="image/x-icon">
+    <!-- Primary Meta Tags -->
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container container--hero">
+
+            <img src="./assets/faviconVG.jpg" class="nav__logo">
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="/" class="nav__link" id="selected">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#juego" class="nav__link">Acerca del juego</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#developers" class="nav__link">Desarrolladores</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#form" class="nav__link">Contactar</a>
+                </li>
+            </ul>
+
+            <img src="./assets/menu.svg" class="nav__menu">
+
+        </nav>
+
+        <section class="hero__main container container--hero">
+
+            <article class="hero__texts">
+
+                <h1 class="hero__title">Bienvenido a la carrera de TI ¡Ven y conoce nuestro Videojuego y como lo desarrollamos!</h1>
+                <p class="hero__paragraph">Conoce todo sobre nuestra carrera y lo que puedes aprender de esta.</p>
+                <a href="https://store.steampowered.com/?l=spanish" target="_blank" class="hero__cta">Conocer más.</a>
+
+            </article>
+            <video autoplay muted loop src="assets/horrorhouse.mp4" class="hero__video hero__bigv"></video>
+            <div class="capa">             
+            </div>
+
+        </section>
+
+    </header>
+
+    <main class="main block2">
+
+        <section class="about" id="juego">
+
+            <article class="about__container container block">
+                
+                <figure class="about__figure">
+                    <img src="./assets/image.png" class="about__img">
+                </figure>
+
+                <div class="about__texts">
+
+                    <h2 class="subtitle">Adentrate en este caso.</h2>
+                    <p class="paragraph">Conoce todo acerca de la leyenda del Charro Negro en este juego de terror que pondrá tus capacidades como investigador en prueba.</p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <section class="sponsor" id="developers">
+
+            <div class="sponsor__main container block1">
+
+                <article class="sponsor__texts">
+
+                    <h1 class="subtitle">Equipo de desarrolladores!</h1>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minus est ratione officia. Cupiditate, ullam animi aut assumenda fuga esse commodi nemo sunt nam sint soluta atque, numquam nisi voluptate?</p>
+                    
+
+                </article>
+
+                <figure class="sponsor__figure">
+
+                    <div class="slidershow middle">
+
+                        <div class="slides">
+                          <input type="radio" name="r" id="r1" checked>
+                          <input type="radio" name="r" id="r2">
+                          <input type="radio" name="r" id="r3">
+                          <input type="radio" name="r" id="r4">
+                          <div class="slide s1">
+                            <img src="/assets/4.png" alt="">
+                          </div>
+                          <div class="slide">
+                            <img src="assets/3.png" alt="">
+                          </div>
+                          <div class="slide">
+                            <img src="assets/2.png" alt="">
+                          </div>
+                          <div class="slide">
+                            <img src="assets/1.png" alt="">
+                          </div>
+                        </div>
+                  
+                        <div class="navigation">
+                          <label for="r1" class="bar"></label>
+                          <label for="r2" class="bar"></label>
+                          <label for="r3" class="bar"></label>
+                          <label for="r4" class="bar"></label>
+                        </div>
+                      </div>
+
+                </figure>
+
+
+            </div>
+
+        </section>
+
+        <section class="learn container block" id="aprender">
+            <h2 class="subtitle">¿Que herramientas se usaron?</h2>
+            <div class="learn__articles">
+
+                <article class="learn__article">
+
+                    <img src="/assets/unity.png" class="learn__img">
+                    <h2 class="learn__title">Unity Hub.</h2>
+                    <p class="paragraph">Programacion y diseño del entorno.</p>
+
+                </article>
+
+                <article class="learn__article">
+
+                    <img src="/assets/AssStore.png" class="learn__img">
+                    <h2 class="learn__title">AssetStore de Unity.</h2>
+                    <p class="paragraph">Material base gratuito para el contenido del videojuego.</p>
+
+                </article>
+
+                <article class="learn__article">
+
+                    <img src="/assets/mixamo.png" class="learn__img">
+                    <h2 class="learn__title">Mixamo</h2>
+                    <p class="paragraph">Modelos 3D gratuitos y con una variedad de animaciones para el personaje.</p>
+
+                </article>
+            </div>
+
+        <section class="mapa container block1">
+            <button onclick="findMe()" class="btn_map">Obtener mi ubicacion</button>
+            <div id="map"></div>
+
+        </section>
+
+
+        <section class="mainForm block1" id="form">
+            <div class="login-container">
+                <div class="login-info-container"><br><br>
+                  <h1 class="title">Comparte tu opinion</h1>
+                  <br>
+                  <form class="inputs-container" action="" id="contactForm">
+                    <div class="alert">Tu comentario fue enviado correctamente.</div>
+                    <label for="">Usuario</label>
+                    <input id="name" class="input" type="text" placeholder="Username"><br>
+                    <label for="">Correo</label>
+                    <input id="emailid" class="input" type="email" placeholder="Correo"><br>
+                    <label for="">Comentario</label>
+                    <textarea id="msgContent" cols="30" rows="10" class="input" placeholder="Da tu opinion"></textarea>
+                    <br>
+                    <button class="btn" id="submit">Enviar</button>
+                    
+                  </form>
+                </div>
+                  <img class="image-container" src="../assets/login.svg" alt="">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+
+        <section class="footer__container container">
+
+            <h2 class="subtitle">Muy pronto contaremos con:</h2>
+
+            <ul class="footer__contact">
+
+                <li class="footer__item">
+
+                    <a href="#" class="footer__link">
+                        <img src="./assets/twitter.svg" class="footer__img">
+                    </a>
+
+                </li>
+                
+                <li class="footer__item">
+
+                    <a href="#" class="footer__link">
+                        <img src="./assets/instagram.svg" class="footer__img">
+                    </a>
+
+                </li>
+
+                <li class="footer__item">
+
+                    <a href="#" class="footer__link">
+                        <img src="./assets/youtube.svg" class="footer__img">
+                    </a>
+
+                </li>
+            </ul>
+        </section>
+
+    </footer>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/mapa.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+    <script src="/js/form.js"></script>
+    <script src="./js/formSend.js"></script>
+</body>
+
+<script>
+    if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('/service.js',{scope:'/'});
+    }
+</script>
+
+
+
+</html>

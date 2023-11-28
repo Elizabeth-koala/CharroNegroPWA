@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El Charro Negro | Contactanos</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../assets/faviconVG.jpg" type="image/x-icon">
+    </head>
+    <body>
+        <header class="hero background_bar">
+            <nav class="nav container container--hero" >
+    
+                <img src="/assets/faviconVG.jpg" class="nav__logo">
+    
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/pages/galeria.html" class="nav__link">Galeria</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/pages/acerca_de.html" class="nav__link">Acerca del juego</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/pages/contacto.html" class="nav__link" id="selected">Contactar</a>
+                    </li>
+                </ul>
+    
+                <img src="../assets/menu.svg" class="nav__menu">
+    
+            </nav>
+    
+        </header>
+
+        <main class="mainForm">
+
+            <div class="login-container">
+                <div class="login-info-container"><br><br>
+                  <h1 class="title">Comparte tu opinion</h1>
+                  <br>
+                  <form class="inputs-container" action="https://formsubmit.co/b0dc26f0eb8873e1da1865fb679b4c24" method="post">
+                    <label for="">Usuario</label>
+                    <input name="name" class="input" type="text" placeholder="Username"><br>
+                    <label for="">Correo</label>
+                    <input name="email" class="input" type="email" placeholder="Correo"><br>
+                    <label for="">Comentario</label>
+                    <textarea name="comments" id="" cols="30" rows="10" class="input" placeholder="Da tu opinion"></textarea>
+                    <br>
+                    <input class="btn" type="submit" value="enviar"></input>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                  </form>
+                </div>
+                  <img class="image-container" src="../assets/login.svg" alt="">
+            </div>
+            
+        </main>
+
+        <script src="/js/app.js"></script>
+</body>
+</html>
